@@ -28,21 +28,25 @@ const ApplicationForm: React.FC = () => {
   const [loading, setLoading] = useState(false);
 
   // Rwandan administrative divisions
-  const provinces = ["Kigali", "Northern", "Southern", "Eastern", "Western"];
-  const districts = {
-    Kigali: ["Gasabo", "Kicukiro", "Nyarugenge"],
-    Northern: ["Musanze", "Gicumbi", "Burera"],
-    Southern: ["Huye", "Nyanza", "Muhanga"],
-    Eastern: ["Rwamagana", "Nyagatare", "Kayonza"],
-    Western: ["Rusizi", "Rubavu", "Nyamasheke"],
-  };
-  const sectors = {
-    Gasabo: ["Gikomero", "Kacyiru", "Kimironko"],
-    Kicukiro: ["Nyarutarama", "Kanombe", "Gahanga"],
-    Nyarugenge: ["Nyamirambo", "Kimisagara", "Muhima"],
-    Musanze: ["Musanze", "Muhoza", "Kinigi"],
-    // Add more as needed
-  };
+// Rwandan administrative divisions
+const provinces = ["Kigali", "Northern", "Southern", "Eastern", "Western"];
+
+const districts: Record<string, string[]> = {
+  Kigali: ["Gasabo", "Kicukiro", "Nyarugenge"],
+  Northern: ["Musanze", "Gicumbi", "Burera"],
+  Southern: ["Huye", "Nyanza", "Muhanga"],
+  Eastern: ["Rwamagana", "Nyagatare", "Kayonza"],
+  Western: ["Rusizi", "Rubavu", "Nyamasheke"],
+};
+
+const sectors: Record<string, string[]> = {
+  Gasabo: ["Gikomero", "Kacyiru", "Kimironko"],
+  Kicukiro: ["Nyarutarama", "Kanombe", "Gahanga"],
+  Nyarugenge: ["Nyamirambo", "Kimisagara", "Muhima"],
+  Musanze: ["Musanze", "Muhoza", "Kinigi"],
+  // Add more as needed
+};
+
   const orgTypes = ["Non-profit", "Startup", "Corporate", "Governmental"];
 
   // Handle form submission

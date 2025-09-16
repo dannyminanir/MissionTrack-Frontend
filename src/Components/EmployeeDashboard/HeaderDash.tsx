@@ -5,7 +5,7 @@ import { useAuth } from "../../context/AuthContext";
 import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   const { user } = useAuth();
 
   const twTheme = (light: string, dark: string) =>

@@ -1,6 +1,5 @@
 // components/PendingRequests.tsx
 import React from "react";
-import { FiInbox } from "react-icons/fi";
 import { MdOutlinePendingActions } from "react-icons/md";
 
 type PendingRequestsProps = {
